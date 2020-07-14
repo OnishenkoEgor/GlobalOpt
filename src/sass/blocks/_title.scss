@@ -1,0 +1,44 @@
+.title{
+    font-family: "Roboto";
+    font-size: 24px;
+    color: #2e2e2e;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+}
+.title-with-line{
+    font-family: "Roboto";
+    font-size: 24px;
+    color: #2e2e2e;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    &::after{
+        content:'';
+        display: block;
+        margin: 0 auto;
+        width: 148px;
+        background-color: $maincolor;
+        height: 1px;
+        margin-top: 20px;
+    }
+}
+.subtitle{
+    color: $blacktext;
+    font-size: 21px;
+    text-align: center;
+    font-weight: 300;
+}
+.white-title{
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+}
+.white-subtitle{
+    text-align: center;
+    color: #fff;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 300;
+}

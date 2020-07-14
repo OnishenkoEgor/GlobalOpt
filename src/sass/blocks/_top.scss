@@ -59,30 +59,7 @@
     }
     
 }
-.header__contact {
-    display: flex;
-    flex-direction: row;
-    flex:0 1 340px;
-    justify-content: space-between;
-    align-items: center;
-}
-.header__phone {
-    p{
-        font-size: 14px;
-        text-align: right;
-        color: #fff;
-        margin-bottom: 5px;
-    }
-    a{
-        font-size: 19px;
-        color: #fff;
-        font-weight: 500;
-        text-align: right;
-    }
-}
-.header__call-back{
-    
-}
+
 .header__descr {
     text-align: center;
     color: #fff;

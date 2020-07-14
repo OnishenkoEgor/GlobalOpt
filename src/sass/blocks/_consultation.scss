@@ -1,0 +1,21 @@
+.consultation {
+    padding-bottom: 58px;
+}
+.consultation__title {
+    margin-bottom: 20px;
+}
+.consultation__logo {
+    border:1px solid $maincolor;
+    margin: 0 auto;
+    margin-bottom: 17px;
+    img{
+        transform: translateY(-5px);
+        max-width: 61px;
+    }
+}
+
+.consultation__btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}

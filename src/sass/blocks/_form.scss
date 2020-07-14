@@ -1,0 +1,28 @@
+.form__input{
+    width: 268px;
+    height: 45px;
+    border-radius: 22.5px;
+    border: solid 1px rgba(0, 0, 0, 0.21);
+    padding: 18px 28px;
+    font-family: 'Roboto';
+    color:#3a3a3a;
+    font-weight: 500;
+}
+.input-list {
+    display: flex;
+    flex-direction: row;
+    max-width: 813px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.form__text{
+    resize: none;
+    width: 813px;
+    height: 71px;
+    border-radius: 7px;
+    border: solid 1px rgba(0, 0, 0, 0.21);
+    padding: 18px 28px;
+    font-family: 'Roboto';
+    color:#3a3a3a;
+}

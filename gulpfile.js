@@ -33,6 +33,7 @@ gulp.task('styles', function() {
 gulp.task('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
     gulp.watch("src/*.html").on('change', gulp.parallel('html'));
+    gulp.watch("src/js/*.js").on('change',gulp.parallel('script'));
 });
 gulp.task('html',function(){
     return gulp.src("src/*.html")
