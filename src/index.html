@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Global Opt</title>
 </head>
 <body>
-    <section class="top">
+    <section id='top' class="top">
         <div class="container">
             <header class="header">
                 <div class="header__logo logo">
                     <img src="img/icons/nav_logo.png" alt="logo">
                 </div>
+                <div class="nav__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#">Преимущества</a></li>
-                        <li class="nav__item"><a href="#">Наша работа</a></li>
-                        <li class="nav__item"><a href="#">Цены</a></li>
-                        <li class="nav__item"><a href="#">Схема работы</a></li>
-                        <li class="nav__item"><a href="#">Отзывы</a></li>
-                        <li class="nav__item"><a href="#">Контакты</a></li>
+                        <li class="nav__item"><a href="#advantages">Преимущества</a></li>
+                        <li class="nav__item"><a href="#our-work">Наша работа</a></li>
+                        <li class="nav__item"><a href="#price">Цены</a></li>
+                        <li class="nav__item"><a href="#scheme">Схема работы</a></li>
+                        <li class="nav__item"><a href="#review">Отзывы</a></li>
+                        <li class="nav__item"><a href="#map">Контакты</a></li>
                     </ul>
                 </nav>
                 
                 <div class="contact">
                     <div class="phone">
                         <p>Есть вопросы?</p>
-                        <a href="tel:11111111111">+7 (926) 423 01 00</a>
+                        <a href="tel:11111111111">+7 (111) 111 01 00</a>
                     </div>
-                    <button class="btn header__call-back ">
+                    <button data-recall='true' class="btn header__call-back ">
                         Перезвоните мне
                     </button>
                 </div>
@@ -60,10 +66,10 @@
                     <div class="works__descr">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг  </div>
                 </div>
             </ul>
-            <button class="btn header__calc ">Получить расчет</button>
+            <a href="#questions" class="btn header__calc ">Получить расчет</a>
         </div>
     </section>
-    <section class="advantages">
+    <section id='advantages' class="advantages">
         <div class="container">
             <div class="advantages__title title">Преимущества работы с GlobalOpt</div>
             <ul class="advantages__list">
@@ -154,7 +160,7 @@
             </ul>
         </div>
     </section>
-    <section class="our-work">
+    <section id='our-work' class="our-work">
         <div class="container">
             <h2 class="our-work__title title-with-line">
                 Наша работа - больше чем просто доставка
@@ -189,7 +195,7 @@
             <div class="agent__subtitle white-subtitle">Русскоговорящие представители компании без труда найдут именно тот товар, который будет отвечать Вашим запросам как по качеству, так и по цене.</div>
         </div>
     </section>
-    <section class="delivery">
+    <section id='price' class="delivery">
         <div class="container">
             <h2 class="delivery__title title-with-line">Цены на любой вариант доставки</h2>
             <h3 class="delivery__subtitle subtitle">Перевозки грузов на дальние расстояния без каких-либо ограничений.<br/>Любой груз доставим вовремя.
@@ -197,39 +203,102 @@
             <ul class="delivery__tabs">
                 <li class="tab">
                     <h4 class="tab__header">Доставка морем</h4>
-                    <div class="tab__logo"><img src="img/icons/boat_icon.png" alt=""></div>
+                    <!-- <div class="tab__logo"><img src="img/icons/boat_icon.png" alt=""></div>
                     <div class="tab__time">Доставка 35-50 дней</div>
                     <div class="tab__price">от 0,3$ за 1 кг</div>
                     <div class="tab__descr">Морские перевозки грузов из Китая в Россию за 35 дней 
+                        с прохождением таможни </div> -->
+                    <div class="tab__wrapper ">
+                        <div class="tab__alt">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Tempora officiis exercitationem doloribus enim.</p>
+                            <p>Voluptates ratione maxime eum molestias?</p>
+                            <p>Quaerat dignissimos sint harum alias.</p>
+                        </div>
+                        <div class="tab__main">
+                            <div class="tab__logo"><img src="img/icons/boat_icon.png" alt=""></div>
+                            <div class="tab__time">Доставка 35-50 дней</div>
+                            <div class="tab__price">от 0,3$ за 1 кг</div>
+                            <div class="tab__descr">Морские перевозки грузов из Китая в Россию за 35 дней 
                         с прохождением таможни </div>
-                    <div class="tab__btn btn">подробнее</div>
+                        </div>
+                    </div>
+                    <button class="tab__btn btn">подробнее</button>
                 </li>
                 <li class="tab">
                     <h4 class="tab__header">Ж/Д доставка</h4>
-                    <div class="tab__logo"><img src="img/icons/train_icon.png" alt=""></div>
+                    <!-- <div class="tab__logo"><img src="img/icons/train_icon.png" alt=""></div>
                     <div class="tab__time">Доставка 15-28 дней</div>
                     <div class="tab__price">от 1$ за 1 кг</div>
                     <div class="tab__descr">ЖД перевозки грузов из Китая в Россию от 2 недель 
-                        с прохождением таможни</div>
-                    <div class="tab__btn btn">подробнее</div>
+                        с прохождением таможни</div> -->
+
+                    <div class="tab__wrapper ">
+                        <div class="tab__alt">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Tempora officiis exercitationem doloribus enim.</p>
+                            <p>Voluptates ratione maxime eum molestias?</p>
+                            <p>Quaerat dignissimos sint harum alias.</p>
+                        </div>
+                        <div class="tab__main">
+                            <div class="tab__logo"><img src="img/icons/train_icon.png" alt=""></div>
+                            <div class="tab__time">Доставка 15-28 дней</div>
+                            <div class="tab__price">от 1$ за 1 кг</div>
+                            <div class="tab__descr">ЖД перевозки грузов из Китая в Россию от 2 недель 
+                                с прохождением таможни</div>
+                        </div>
+                    </div>
+                    <button class="tab__btn btn">подробнее</button>
                 </li>
                 <li class="tab">
                     <h4 class="tab__header">Автодоставка</h4>
-                    <div class="tab__logo"><img src="img/icons/truck_icon.png" alt=""></div>
+                    <!-- <div class="tab__logo"><img src="img/icons/truck_icon.png" alt=""></div>
                     <div class="tab__time">Доставка 12-20 дня</div>
                     <div class="tab__price">от 1$ за 1 кг</div>
                     <div class="tab__descr">Автоперевозки грузов из Китая в Россию от 2 недель 
-                        с прохождением таможни</div>
-                    <div class="tab__btn btn">подробнее</div>
+                        с прохождением таможни</div> -->
+                    <div class="tab__wrapper ">
+                        <div class="tab__alt">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Tempora officiis exercitationem doloribus enim.</p>
+                            <p>Voluptates ratione maxime eum molestias?</p>
+                            <p>Quaerat dignissimos sint harum alias.</p>
+                        </div>
+                        <div class="tab__main">
+                            <div class="tab__logo"><img src="img/icons/truck_icon.png" alt=""></div>
+                            <div class="tab__time">Доставка 12-20 дня</div>
+                            <div class="tab__price">от 1$ за 1 кг</div>
+                            <div class="tab__descr">Автоперевозки грузов из Китая в Россию от 2 недель 
+                                с прохождением таможни</div>
+                        </div>
+                    </div>
+                    <button class="tab__btn btn">подробнее</button>
                 </li>
                 <li class="tab">
-                    <h4 class="tab__header">Авиа доставка</h4>
+                    <!-- <h4 class="tab__header">Авиа доставка</h4>
                     <div class="tab__logo"><img src="img/icons/airplane_icon.png" alt=""></div>
                     <div class="tab__time">Доставка 1-12 дней</div>
                     <div class="tab__price">от 6$ за 1 кг</div>
                     <div class="tab__descr">Авиаперевозки грузов из Китая в Россию до 2 недель 
                         с прохождением таможни</div>
-                    <div class="tab__btn btn">подробнее</div>
+                    -->
+                    <h4 class="tab__header">Авиа доставка</h4>
+                    <div class="tab__wrapper ">
+                        <div class="tab__alt">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Tempora officiis exercitationem doloribus enim.</p>
+                            <p>Voluptates ratione maxime eum molestias?</p>
+                            <p>Quaerat dignissimos sint harum alias.</p>
+                        </div>
+                        <div class="tab__main">
+                            <div class="tab__logo"><img src="img/icons/airplane_icon.png" alt=""></div>
+                            <div class="tab__time">Доставка 1-12 дней</div>
+                            <div class="tab__price">от 6$ за 1 кг</div>
+                            <div class="tab__descr">Авиаперевозки грузов из Китая в Россию до 2 недель 
+                                с прохождением таможни</div>
+                        </div>
+                    </div>
+                    <button class="tab__btn btn">подробнее</button>
                 </li>
             </ul>
         </div>
@@ -240,11 +309,11 @@
                 Заказать бесплатную консультацию
             </h2>
             <div class="consultation__logo circle"><img src="img/icons/consult_icon.png" alt="consult"></div>
-            <form action="#" class="consultation__form">
+            <form enctype="multipart/form-data" action="#" class="consultation__form">
                 <div class="input-list">
-                    <input type="text" name="name" placeholder="Ваше имя..." class="form__input">
-                    <input type="text" name="phone" placeholder="Ваш номер телефона..." class="form__input">
-                    <input type="text" name="phone" placeholder="Ваш e-mail..." class="form__input">
+                    <input   placeholder="Ваше имя..." class="form__input" type="text" name="name">
+                    <input   placeholder="Ваш номер телефона..." class="form__input" type="text" name="phone">
+                    <input   placeholder="Ваш e-mail..." class="form__input" type="text" name="email">
                 </div>
                 <button class="consultation__btn btn">Отправить заявку</button>
             </form>
@@ -260,7 +329,7 @@
                     поставки от завода-изготовителя.</div>
         </div>
     </section>
-    <section class="scheme">
+    <section id='scheme' class="scheme">
         <div class="container">
             <h2 class="scheme__title title">Схема работы с нами</h2>
             <ul class="scheme__row">
@@ -304,7 +373,7 @@
             </ul>
         </div>
     </section>
-    <section class="review">
+    <section id='review' class="review">
         <div class="container">
             <h2 class="review__title title-with-line">отзывы наших клиентов</h2>
             <h3 class="review__subtitle subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</h3>
@@ -313,40 +382,40 @@
                 <div class="slide__arrow-right"><img src="img/icons/rectangle_icon.png" alt=""> </div>
                 <div class="slide">
                     <div class="slide__img"><img src="img/background/slide_photo.png" alt=""></div>
-                    <div class="slide__name">1Анисимова Ольга</div>
+                    <div class="slide__name">Анисимова Ольга</div>
                     <div class="slide__descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
                 </div>
                 <div class="slide">
                     <div class="slide__img"><img src="img/background/slide_photo.png" alt=""></div>
-                    <div class="slide__name">2Анисимова Ольга</div>
+                    <div class="slide__name">Анисимова Ольга</div>
                     <div class="slide__descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
                 </div>
                 <div class="slide">
                     <div class="slide__img"><img src="img/background/slide_photo.png" alt=""></div>
-                    <div class="slide__name">3Анисимова Ольга</div>
+                    <div class="slide__name">Анисимова Ольга</div>
                     <div class="slide__descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
                 </div>
             </div>
         </div>
     </section>
     <section class="questions">
-        <div class="container">
-            <form action="#" class="questions_form ">
+        <div id='questions' class="container">
+            <form  enctype="multipart/form-data" action="#" class="questions_form ">
                 <div class="questions__text">
                     <h2 class="questions__title">Остались вопросы?</h2>
                     <h3 class="quesions__subtitle">Напишите нам!</h3>
                 </div>
                 <div class="questions__input-list input-list">
-                    <input type="text" name="name" placeholder="Ваше имя..." class="form__input">
-                    <input type="text" name="phone" placeholder="Ваш номер телефона..." class="form__input">
-                    <input type="text" name="phone" placeholder="Ваш e-mail..." class="form__input">
+                    <input  type="text" name="name" placeholder="Ваше имя..." class="form__input">
+                    <input  type="text" name="phone" placeholder="Ваш номер телефона..." class="form__input">
+                    <input  type="text" name="email" placeholder="Ваш e-mail..." class="form__input">
                 </div>
                 <textarea name="textarea" class="form__text" placeholder="Сообщение..."></textarea>
                 <button class="questions__btn btn">Отправить заявку</button>
             </form>
         </div>
     </section>
-    <section class="map">
+    <section id='map' class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670.5194445060047!2d37.62720323062082!3d55.74755353384573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINCc0L7RgdC60LLQsCwgMTE1MDM1!5e0!3m2!1sru!2sru!4v1594467773726!5m2!1sru!2sru" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
     <footer class="footer">
@@ -360,9 +429,9 @@
                     <div class="contact">
                         <div class="phone">
                             <p>Есть вопросы?</p>
-                            <a href="tel:11111111111">+7 (926) 423 01 00</a>
+                            <a href="tel:11111111111">+7 (111) 111 01 00</a>
                         </div>
-                        <button class="btn header__call-back ">
+                        <button data-recall='true' class="btn header__call-back ">
                             Перезвоните мне
                         </button>
                     </div>
@@ -370,13 +439,32 @@
             </div>
             <div class="footer__divider"></div>
             <div class="footer__row">
-                <div class="footer__copyright">© 2010 qqqqqq.com.qq</div>
+                <div class="footer__copyright">© 2020 <a href="mailto:egoronishenko@yandex.ru">egoronishenko@yandex.ru</a></div>
                 <a href="#" class="footer__confident">Политика конфидециальности</a>
                 <div class="footer__link">Создание сайта:</div>
             </div>
         </div>
     </footer>
-    <section class="square">
+    <section data-close='true' class="modal" >
+        <form enctype="multipart/form-data" action="#" class="modal-form">
+            <div class="close-form">×</div>   
+            <div class="input-list">
+                <input  type="text" name="name" placeholder="Ваше имя..." class="form__input">
+                <input  type="phone" name="phone" placeholder="Ваш номер телефона..." class="form__input">
+                <input  type="mail" name="email" placeholder="Ваш e-mail..." class="form__input">
+            </div>
+            <button class="consultation__btn btn">Отправить заявку</button>
+        </form>
+    </section>
+    <div class="to-top">
+        <a href="#top" class="to-top__link">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+    <div class="message">
+        qqq
+    </div>
+    <!-- <section class="square">
         <div class="square__wrapper">
         <div class="box"> 
             <div class="square_input ">
@@ -419,7 +507,9 @@
         </div> </div>
 
         </div>
-    </section>
+    </section> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src= "jQ/jquery.maskedinput.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

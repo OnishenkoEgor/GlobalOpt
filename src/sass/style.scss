@@ -18,12 +18,15 @@
 @import 'blocks/question';
 @import 'blocks/footer';
 @import 'blocks/square';
-
+@import 'blocks/modal-form';
+@import 'blocks/linktotop';
+@import 'blocks/message';
+@import 'base/media';
 
 .container{
     margin: 0 auto;
     display: block;
-    max-width: 1140px;
+    
 }
 *,a,p,div{
     font-family:'Roboto',sans-serif;

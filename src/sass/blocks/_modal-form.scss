@@ -1,0 +1,36 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-form{
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px 20px;
+    position: relative;
+    .input-list{
+        flex-direction: column;
+        input{
+            margin: 10px 0;
+        }
+    }
+    .close-form{
+        font-size: 40px;
+        font-weight: 500;
+        color:$maincolor;
+        cursor: pointer;
+        position: absolute;
+        right: -40px;
+        top: -15px;
+        z-index: 33;
+        background-color: rgba(0,0,0,0.0);
+    }
+}

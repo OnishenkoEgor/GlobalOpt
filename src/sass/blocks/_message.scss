@@ -1,0 +1,16 @@
+.message{
+    position: fixed;
+    display: block;
+    line-height: 40px;
+    padding: 0 30px;
+    top: -40px;
+    left: 50%;
+    font-size: 19px;
+    font-weight: 500;
+    color: $blacktext;
+    font-family: "Roboto";
+    transform: translateX(-50%);
+    background-color: #fff;
+    transition: 0.5s all;
+    z-index: 100;
+}

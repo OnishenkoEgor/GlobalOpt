@@ -29,7 +29,7 @@
     }
     &__item {
         flex: 1 1 auto;
-        border-right:1px dashed rgba($color: #fff, $alpha: 0.4);
+        border-right:1px dotted rgba($color: #fff, $alpha: 0.4);
         text-align: center;
         a{
             font-size: 15px;
